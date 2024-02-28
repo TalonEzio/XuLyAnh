@@ -1,10 +1,11 @@
 import random
+
 def KhoiTao(seed = 10):
     global a, b, c
     a = random.randint(0, seed)
     b = random.randint(0, seed)
     c = random.randint(0, seed)
-
+    
 def HienThi():
     print('a = ', a)
     print('b = ', b)
@@ -21,10 +22,8 @@ def MaxMin():
     print('min = ', min_var)
 
 
-def TimKiem(x):
-    exist = False
-    if x == a or x == b or x == c:
-        exist = True
+def TimKiem(x:int):
+    exist = x == a or x == b or x == c
     if exist:
         print(f'co ton tai {x}')
     else:
